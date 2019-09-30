@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ProjRec (tituloP,cabeçalho,equipa,resumo,projetos,data)>
+<!ELEMENT tituloP (#PCDATA)>
+<!ELEMENT cabeçalho (nome,titulo, subtitulo, dataI,dataF,supervisor)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT dataI (#PCDATA)>
+<!ELEMENT dataF (#PCDATA)>
+<!ELEMENT supervisor (#PCDATA)>
+<!ELEMENT equipa (colaborador)+>
+<!ELEMENT colaborador (nomeP, numero?, email, github?)>
+<!ELEMENT nomeP (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+<!ELEMENT resumo (paragrafo)+>
+<!ELEMENT paragrafo (#PCDATA|url)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT projetos (projeto)+>
+<!ELEMENT projeto (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+
+
+
+
+<!ATTLIST supervisor href CDATA #REQUIRED >
+<!ATTLIST email href CDATA #REQUIRED >
+<!ATTLIST github href CDATA #REQUIRED >
+<!ATTLIST url href CDATA #REQUIRED >
+<!ATTLIST projeto href CDATA #REQUIRED >

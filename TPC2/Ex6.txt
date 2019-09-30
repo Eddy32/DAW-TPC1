@@ -1,0 +1,13 @@
+Desenvolvimento Aplicações WEB
+Ficha 3
+Exercício 6
+
+A)
+//ARQELEM[matches(CONCEL, ' *Amares *')]/IDENTI
+
+
+B)
+distinct-values(//CONCEL)
+
+C)
+//ARQELEM[matches(CONCEL,' *Montalegre *')]/DESCRI

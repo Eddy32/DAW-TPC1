@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjRec SYSTEM "file:/Users/eddy32/Documents/UM/4_Ano/DAW/TPC2/ProjRec.dtd">
+<ProjRec>
+    <tituloP>My Project Record</tituloP>
+    <cabeçalho>
+        <nome>TPC2 DAW</nome>
+        <titulo>Entrega Trabalho de Desenvolvimento Aplicações WEB</titulo>
+        <subtitulo>Utilização de DTD's, XPATH e XML</subtitulo>
+        <dataI>24-09-2019</dataI>
+        <dataF>01-10-2019</dataF>
+        <supervisor href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </cabeçalho>
+    <equipa>
+        <colaborador> 
+            <nomeP>Pedro Jorge Rito Lima</nomeP>
+            <numero>a80795</numero>
+            <email href="mailto:a80785@alunos.uminho.pt?Subject=Nice">a80785@alunos.uminho.pt</email>
+            <github href="https://github.com/Eddy32">GitHub - Eddy32</github>
+        </colaborador>
+    </equipa>
+    <resumo>
+        <paragrafo>Entrega do segundo trabalho de casa, da unidade curricular de Desenvolvilmente de Aplicações WEB.</paragrafo>
+    </resumo>
+    <projetos>
+        <projeto href="https://github.com/Eddy32/DAW-TPCs">Repositório dos TPCs</projeto>
+    </projetos>
+    <data>01-10-2019</data>
+</ProjRec>
