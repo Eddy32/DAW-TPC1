@@ -1,4 +1,5 @@
 # DAW-TPC1
-Primeiro Trabalho de Casa da UC Complementar "Desenvolvimento Aplicações WEB".
+Repositório relativo à submissão dos Trabalhos de Casa da UC Complementar "Desenvolvimento Aplicações WEB".
 
-É necessário acesso à internet de modo a que todas as funcionalidades estejam operacionais.
+NOTA!
+Para o primeirto trabalho (site html) é necessário acesso à internet de modo a que todas as funcionalidades estejam operacionais.
