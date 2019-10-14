@@ -14,7 +14,7 @@
                <b>KEY NAME: </b>TPC3
             </td>
             <td width="50%">
-               <b>BEGIN DATE: </b>01/10/2019
+               <b>BEGIN DATE: </b>08/10/2019
             </td>
          </tr>
          <tr>
@@ -22,7 +22,7 @@
                <b>TITLE: </b>Transformações XLST
             </td>
             <td width="50%">
-               <b>END DATE:</b>08/10/2019
+               <b>END DATE:</b>15/10/2019
             </td>
          </tr>
          <tr>
@@ -52,13 +52,18 @@
       <hr></hr>
       
       <h3>Abstract</h3>
-      <p> O terceiro trabalho de caso era composto por 2 desafios. </p>
-      <p> O 1º consistia na criação de uma XSL(eXtensible Stylesheet Language) para transformar
-         o pr.xml numa página html.
+      <p> O quarto trabalho de caso era composto por criar um website relativo aos arqueossítios.
+         
       </p>
-      <p> Já o 2º baseou-se no desenvolvimento de um website para os arqueossitios e para esse
-         efeito foi criada uma XSL. Com essa stylesheet foram geradas várias páginas html e
-         um indíce que ordenasse as mesmas. 
+      <p> Deste modo foi desenvolvida uma stylesheet que processava o ficheiro XML corresponde
+         a todos os Arquessítios de Norte e gerava um ficheiro XML para cada um destes. Adicionalmente,
+         estes foram agrupados por concelho de modo a ser possível uma melhor análise dos dados.
+      </p>
+      <p> De seguida foi criada uma stylesheet que é associada a cada um desses ficheiros,
+         de modo a serem convertidos em HTML (e minimamente visualmente estéticos). 
+      </p>
+      <p> Por fim, foi desenvolvido um servidor em node.js, acessível pela porta 7777 em localhost,
+         que permite um acesso via browser a toda a informação processada. 
       </p>
       <hr></hr>
       <hr></hr>
@@ -66,22 +71,25 @@
       <h3>Deliverables:</h3>
       <ul>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC3/PR/pr.xsl">PR(XSL) </a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.xsl">PR(XSL) </a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC3/PR/pr.xml">PR(XML)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.xml">PR(XML)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC3/PR/pr.html">PR(HTML)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.html">PR(HTML)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC3/PR/pr.dtd">PR(DTD)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.dtd">PR(DTD)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC3/Arqueossitios/arq.xsl">Arqueossítios(XSL)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/arqconfig.xsl">Stylesheet para cada arquiosítio</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/tree/master/TPC3/Arqueossitios/html">Website dos Arqueossítios</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/server.js">Servidor</a>
+         </li>
+         <li>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/web.xsl">Stylesheet que processa todo o XML inicial</a>
          </li>
       </ul>
       <hr></hr>

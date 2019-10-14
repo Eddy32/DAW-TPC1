@@ -7,8 +7,8 @@ http.createServer(function (req,res){
     console.log(req.method + ' ' + req.url)
     console.log('Ficheiro: '+pag)
     switch(pag){
-        
-        case ('index.html' || '') :
+        case '': //nao pode ser agrupado ao case abaixo, pois o operador || não é valido em clausulas swithc-case 
+        case ('index.html') :
             fs.readFile('dataset/index.html' ,function(err,data){
             res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
             res.write(data)
