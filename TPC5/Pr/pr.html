@@ -11,18 +11,18 @@
       <table width="100%">
          <tr>
             <td width="50%">
-               <b>KEY NAME: </b>TPC4
+               <b>KEY NAME: </b>TPC5
             </td>
             <td width="50%">
-               <b>BEGIN DATE: </b>08/10/2019
+               <b>BEGIN DATE: </b>15/10/2019
             </td>
          </tr>
          <tr>
             <td width="50%">
-               <b>TITLE: </b>Servidor Node JS
+               <b>TITLE: </b>Servidor Node JS de Tarefas
             </td>
             <td width="50%">
-               <b>END DATE:</b>15/10/2019
+               <b>END DATE:</b>22/10/2019
             </td>
          </tr>
          <tr>
@@ -52,18 +52,17 @@
       <hr></hr>
       
       <h3>Abstract</h3>
-      <p> O quarto trabalho de caso era composto por criar um website relativo aos arqueossítios.
-         
+      <p> O quinto trabalho de caso era composto por criar um website relativo ao registo de
+         tarefas e visualização das mesmas. 
       </p>
-      <p> Deste modo foi desenvolvida uma stylesheet que processava o ficheiro XML corresponde
-         a todos os Arquessítios de Norte e gerava um ficheiro XML para cada um destes. Adicionalmente,
-         estes foram agrupados por concelho de modo a ser possível uma melhor análise dos dados.
+      <p> Este teria de ser capaz de responder a pedidos GET e POST e estar devidamente preparado
+         para o caso de receber como argumento algo "inesperado", evitando assim um cenário
+         de erro por parte do servidor.
       </p>
-      <p> De seguida foi criada uma stylesheet que é associada a cada um desses ficheiros,
-         de modo a serem convertidos em HTML (e minimamente visualmente estéticos). 
-      </p>
-      <p> Por fim, foi desenvolvido um servidor em node.js, acessível pela porta 7777 em localhost,
-         que permite um acesso via browser a toda a informação processada. 
+      <p> Graficamente o servidor é composto por uma página inicial que contém uma form de
+         submissão de tarefas e abaixo uma tabela com todas as que foram criadas. Adicionalmente
+         foi criada uma página de erro, para processar os pedidos do utilizador a que servidor
+         não tinha resposta. 
       </p>
       <hr></hr>
       <hr></hr>
@@ -71,25 +70,34 @@
       <h3>Deliverables:</h3>
       <ul>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.xsl">PR(XSL) </a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Pr/pr.xsl">PR(XSL) </a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.xml">PR(XML)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Pr/pr.xml">PR(XML)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.html">PR(HTML)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Pr/pr.html">PR(HTML)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Pr/pr.dtd">PR(DTD)</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Pr/pr.dtd">PR(DTD)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/arqconfig.xsl">Stylesheet para cada arquiosítio</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/tarefas.json">Ficheiro com os dados das tarefas (BD)</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/server.js">Servidor</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/layout.pug">Template base</a>
          </li>
          <li>
-            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC4/Arq/web.xsl">Stylesheet que processa todo o XML inicial</a>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/index.pug">Template da página principal</a>
+         </li>
+         <li>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/erro.pug">Template da página de erro</a>
+         </li>
+         <li>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/gestaoTarefas.js">Servidor Node.js</a>
+         </li>
+         <li>
+            <a href="https://github.com/Eddy32/DAW-TPCs/blob/master/TPC5/Website/stylesheet/w3.css">Código CSS W3</a>
          </li>
       </ul>
       <hr></hr>
