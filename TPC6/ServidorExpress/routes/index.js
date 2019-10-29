@@ -34,7 +34,7 @@ router.get('/cancao:id',function(req,res,next){
        console.log('Música não encontrada')     
     }
     else
-    console.log('NAO LEU A BD')
+    console.log('Erro a ler a base de dados')
   })
 })
 
@@ -51,10 +51,10 @@ router.get('/update:id', function(req, res, next) {
         
        }
        else
-       console.log('Index =-1')     
+       console.log('Musica nao encontrada')     
     }
     else
-    console.log('NAO LEU A BD')
+    console.log('Erro a ler a base de dados')
   })
 })
 
@@ -86,7 +86,6 @@ router.post('/update:id', function(req, res) {
       cancoes[index].tit=req.body.tit
       cancoes[index].musico=req.body.musico
       cancoes[index].duracao=req.body.duracao
-      cancoes[index].obs=req.body.obs
       jsonfile.writeFile(myBD, cancoes, erro => {
         if(erro) console.log(erro)
         else console.log('Registo gravado com sucesso.')
@@ -102,7 +101,6 @@ router.delete('/:id',function(req,res){
   var id = req.params.id
   jsonfile.readFile(myBD, (erro, cancoes)=>{
       if(!erro){
-          console.log("ABSJDHILKNSABKJ")
           var index = cancoes.findIndex(a => a.id==id )
           if(index > -1){
               cancoes.splice(index, 1)
@@ -122,7 +120,6 @@ router.delete('/:id',function(req,res){
           res.end('1')
       }
   })
-  //res.redirect('/')
   })
 
 module.exports = router
