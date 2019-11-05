@@ -1,0 +1,29 @@
+
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container
+                h3 Atualizar Filme
+            .w3-container.w3-teal
+                label
+                    b Título
+                input.w3-input.w3-border.w3-light-grey(type='text' name='title' value=film.title)
+                label
+                    b Ano
+                input.w3-input.w3-border.w3-light-grey(type="text" name='year' value=film.year)
+                label
+                    b Elenco
+                each ator in film.cast
+                    input.w3-input.w3-border.w3-section.w3-light-grey(id="ator" type="text" name="cast[]" value=ator class ="ator")
+                label
+                    b Género
+                each genero in film.genres
+                    input.w3-input.w3-border.w3-section.w3-light-grey(id="genres" type="text" name="genres[]" value=genero class="genres")
+
+                        
+                button.w3-button.w3-blue(onclick="atualizar('" + film._id + "')") Atualizar
+            .w3-container               
+                    a(href='/filmes/'+ film._id)
+                        button(align='right') Cancelar
+

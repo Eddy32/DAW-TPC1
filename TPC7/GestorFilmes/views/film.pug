@@ -1,0 +1,30 @@
+extends layout
+block content
+  .w3-container
+    h1 Detalhes do Filme
+    .w3-card-4
+        table.w3-table-all
+            tr   
+                th Título
+                td= film.title
+            tr  
+                th Ano
+                td= film.year
+            tr  
+                th Elenco
+                td
+                     ul
+                         each c in film.cast
+                             li= c
+            tr  
+                th Géneros
+                td
+                     ul
+                         each g in film.genres
+                             li= g
+
+    tr      
+    a(href='/filmes/update/' + film._id) 
+        button Update                
+    a(href='/') 
+        button Cancelar
