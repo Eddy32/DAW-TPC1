@@ -7,12 +7,12 @@ function eliminar(id) {
 
 // Atualizar um filme
 function atualizar(id) {
-    var inputs = document.getElementsByClassName( 'names' ),
+    var inputs = document.getElementsByClassName( 'ator' ),
     atores  = [].map.call(inputs, function( input ) {
         return input.value;
     });
 
-    var inputs = document.getElementsByClassName( 'genres' ),
+    var inputs = document.getElementsByClassName( 'ator' ),
     generos  = [].map.call(inputs, function( input ) {
         return input.value;
     });
