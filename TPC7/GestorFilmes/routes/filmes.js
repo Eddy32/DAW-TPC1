@@ -12,10 +12,6 @@ router.get('/', function (req, res, next) {
         })
 })
 
-router.get('/filmes/add', function (req, res, next) {
-    res.render('add')
-})
-
 router.get('/filmes/:id', function (req, res, next) {
     Filmes.consultar(req.params.id)
         .then(film => res.render('film', { film }))
