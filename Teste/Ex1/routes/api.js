@@ -49,17 +49,4 @@ router.get('/obrasQuant', function(req, res, next) {
 
 
 
-/*> db.musics.aggregate([{$project:{
-    id: 1,
-    titulo:1,
-    _id:0,
-    NumberOfPartitures: {
-        $cond: { 
-            if: { $isArray: "$instrumentos" },
-                then: { $size: "$instrumentos" },
-            else: "0"} 
-    }
-}}])
-*/
-
 module.exports = router;
