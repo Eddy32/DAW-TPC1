@@ -6,7 +6,7 @@ var Musics = require('../controllers/musics')
 
 router.get('/obras', function(req, res, next) {
     var comp = req.query.compositor
-    var inst = req.query.inst
+    var inst = req.query.instrumento
     if(comp){
         Musics.listaMusicsComp(comp)
         .then(dados => res.jsonp(dados))
