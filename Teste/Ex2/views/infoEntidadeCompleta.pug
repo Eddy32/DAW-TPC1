@@ -1,0 +1,68 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3= lista.designacao
+            table.w3-table-all
+                tr
+                    th Sigla
+                        td= lista.sigla
+                tr
+                    th Estado
+                        td= lista.estado
+                tr
+                    th sioe
+                        td= lista.sioe
+                tr
+                    th Designação
+                        td= lista.designacao
+                tr
+                    th Internacional
+                        td= lista.internacional
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Tipologias a que Pertence:
+            table.w3-table-all
+                tr
+                    th Sigla
+                    th Designacao
+                    th Identificador
+                each tip in lista.tipologias
+                    tr
+                        
+                        td= tip.sigla
+                        td= tip.designacao
+                        td
+                            a(href='http://localhost:5004/tipologias/' + tip.id)= tip.id
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Processos que é dona:
+            table.w3-table-all
+                tr
+                    th Código 
+                    th Título
+                each dono in lista.dono
+                    tr
+                        td
+                            a(href='http://clav.dglab.gov.pt/classes/consultar/c' + dono.codigo)= dono.codigo
+                        td= dono.titulo
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Processos em que participa:
+            table.w3-table-all
+                tr
+                    th Tipo de Participação
+                    th Código
+                    th Título 
+                each dono in lista.participante
+                    tr
+                        td= dono.tipoPar
+                        td
+                            a(href='http://clav.dglab.gov.pt/classes/consultar/c' + dono.codigo)= dono.codigo
+                        td= dono.titulo
+
+    footer.w3-container.w3-teal Desenvolvido por Pedro Lima
+            a(href='/')
+                button.w3-button.w3-green.w3-margin Pagina Inicial
